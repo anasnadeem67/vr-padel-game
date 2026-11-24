@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Paddle Game - Padel in Virtual Reality for Meta Quest</title>
+<meta name="description" content="Paddle Game is an offline, single-player VR padel game for Meta Quest with an AI opponent, three difficulty levels and a glass-walled padel court. Download the APK and install guide.">
+<!-- Replace with your real domain after deployment -->
+<link rel="canonical" href="https://YOUR-DOMAIN/">
+<meta name="theme-color" content="#05060F">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Paddle Game - Padel in Virtual Reality">
+<meta property="og:description" content="Offline single-player VR padel for Meta Quest with an AI opponent and three difficulty levels.">
+<meta property="og:url" content="https://YOUR-DOMAIN/">
+<meta property="og:image" content="https://YOUR-DOMAIN/assets/images/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Paddle Game - Padel in Virtual Reality">
+<meta name="twitter:description" content="Offline single-player VR padel for Meta Quest.">
+<meta name="twitter:image" content="https://YOUR-DOMAIN/assets/images/og.jpg">
+<link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VideoGame",
+  "name": "Paddle Game",
+  "description": "A standalone, single-player, fully offline VR padel game with an AI opponent and three difficulty levels.",
+  "genre": "Sports",
+  "playMode": "SinglePlayer"
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav">
+  <div class="container nav-in">
+    <a class="logo" href="#home" aria-label="Paddle Game home">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7C3AED"/><stop offset=".6" stop-color="#3B82F6"/><stop offset="1" stop-color="#22D3EE"/></linearGradient></defs><ellipse cx="14" cy="13" rx="9" ry="10" fill="url(#lg)"/><rect x="12" y="21" width="4" height="9" rx="2" fill="url(#lg)"/><circle cx="25" cy="24" r="4" fill="#22D3EE"/></svg>
+      <span>PADDLE GAME</span>
+    </a>
+    <button class="menu-btn" id="menu-btn" aria-label="Toggle menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+    <nav aria-label="Main">
+      <ul id="menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#how-to-play">How to Play</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#install">Install Guide</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a class="cta" href="#download">Download</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- HERO -->
+<section class="hero" id="home" aria-labelledby="hero-title">
+  <div class="container hero-grid">
+    <div class="reveal">
+      <span class="badge">BUILT FOR META QUEST VR</span>
+      <h1 id="hero-title">PADDLE GAME</h1>
+      <p class="sub">Experience Paddle Gaming in Virtual Reality.</p>
+      <p class="intro">Step onto a glass-walled padel court, serve with your own hand and rally against an AI opponent. Single-player, fully offline, no account needed.</p>
+      <div class="btn-row">
+        <a class="btn btn-primary btn-lg" href="#download">DOWNLOAD FOR META QUEST</a>
+        <a class="btn btn-ghost btn-lg" href="#install">HOW TO INSTALL</a>
+      </div>
+    </div>
+    <div class="hero-visual reveal">
+      <svg class="court-bg" viewBox="0 0 600 420" aria-hidden="true" preserveAspectRatio="xMidYMid slice">
+        <defs>
+          <linearGradient id="cg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7C3AED" stop-opacity=".0"/><stop offset="1" stop-color="#3B82F6" stop-opacity=".35"/></linearGradient>
+        </defs>
+        <polygon points="190,120 410,120 590,400 10,400" fill="url(#cg)" stroke="#22D3EE" stroke-opacity=".5" stroke-width="2"/>
+        <line x1="300" y1="120" x2="300" y2="400" stroke="#22D3EE" stroke-opacity=".35" stroke-width="2"/>
+        <line x1="100" y1="260" x2="500" y2="260" stroke="#22D3EE" stroke-opacity=".45" stroke-width="2"/>
+        <line x1="150" y1="190" x2="450" y2="190" stroke="#22D3EE" stroke-opacity=".3" stroke-width="2"/>
+        <line x1="190" y1="120" x2="190" y2="60" stroke="#7C3AED" stroke-opacity=".5" stroke-width="2"/>
+        <line x1="410" y1="120" x2="410" y2="60" stroke="#7C3AED" stroke-opacity=".5" stroke-width="2"/>
+      </svg>
+      <div class="headset">
+        <img src="assets/images/shot-5.svg" width="1280" height="720" alt="Paddle Game court with scoreboard (replace with real screenshot)">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="alt" aria-labelledby="about-title">
+  <div class="container">
+    <div class="about-grid">
+      <div class="reveal">
+        <span class="eyebrow">About the game</span>
+        <h2 id="about-title">Padel, the way it feels in VR</h2>
+        <p>Paddle Game is a standalone VR padel game. Padel is a tennis-like sport played in a court surrounded by glass walls. You hold the racket in your right hand, toss the ball with your left and swing to hit it.</p>
+        <p>The game is single-player and runs fully offline. It needs no internet connection and no server. It is built with Unity 6, C# and OpenXR, and ships as an Android ARM64 APK that appears as "Paddle" in the headset library.</p>
+      </div>
+      <div class="card reveal">
+        <ul class="facts">
+          <li><span>Genre</span><span>VR sports (padel)</span></li>
+          <li><span>Players</span><span>Single-player</span></li>
+          <li><span>Connection</span><span>Fully offline</span></li>
+          <li><span>Engine</span><span>Unity 6, OpenXR</span></li>
+          <li><span>Package</span><span><code>com.ITCorpInc.Paddle</code></span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="grid g4">
+      <article class="card reveal">
+        <div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 9a3 3 0 0 1 3-3h14a3 3 0 0 1 3 3v6a3 3 0 0 1-3 3h-3l-2-2h-4l-2 2H5a3 3 0 0 1-3-3z"/><path d="M8 12h.01M16 12h.01"/></svg></div>
+        <h3>Offline VR experience</h3>
+        <p>No internet, no server, no account. Put the headset on and play. The game stores only four settings on the headset.</p>
+      </article>
+      <article class="card reveal">
+        <div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="7" width="14" height="11" rx="3"/><path d="M12 3v4M9 12h.01M15 12h.01M9 21h6"/></svg></div>
+        <h3>AI opponent</h3>
+        <p>A computer-controlled opponent that tracks and predicts the ball, so every rally has someone worth beating.</p>
+      </article>
+      <article class="card reveal">
+        <div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10M12 20V4M20 20v-7"/></svg></div>
+        <h3>Difficulty and match length</h3>
+        <p>Pick Easy, Medium or Hard, and play matches of 2, 4 or 8 rounds. The point goes to the player who hit the ball last.</p>
+      </article>
+      <article class="card reveal">
+        <div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M12 5v14M3 12h18"/></svg></div>
+        <h3>Padel court environment</h3>
+        <p>A glass-walled court with lights, a scoreboard and an animated audience of 30 spectators.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- HOW TO PLAY -->
+<section id="how-to-play" aria-labelledby="play-title">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">How to play</span>
+      <h2 id="play-title">Controls and match flow</h2>
+      <p>Learn it in a minute.</p>
+    </div>
+    <div class="grid g2">
+      <ol class="steps reveal">
+        <li><strong>Racket in your right hand</strong><span>Your right hand holds the racket. Swing to hit the ball.</span></li>
+        <li><strong>Ball in your left hand</strong><span>Hold the ball in your left hand, ready to serve.</span></li>
+        <li><strong>Press <kbd>X</kbd> to serve</strong><span>Use the X button on the left controller to serve.</span></li>
+        <li><strong>Rally and score</strong><span>The point goes to the player who hit the ball last. A result screen then shows YOU WIN, YOU LOSE or DRAW.</span></li>
+      </ol>
+      <div class="card reveal">
+        <h3>Main menu</h3>
+        <ul class="notes-list">
+          <li><strong>Practice</strong> to warm up on the court.</li>
+          <li><strong>Play Match</strong> with Easy, Medium or Hard, and 2, 4 or 8 rounds.</li>
+          <li><strong>Settings</strong> with graphics quality (Low, Medium, High) and music On or Off.</li>
+          <li><strong>Exit</strong> to leave the game.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" class="alt" aria-labelledby="gal-title">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Gallery</span>
+      <h2 id="gal-title">See the court</h2>
+      <p>Select a screenshot to enlarge it. Use the arrow keys to browse and Esc to close.</p>
+    </div>
+    <div class="gal reveal">
+      <button type="button" data-full="assets/images/shot-1.svg" data-alt="Main menu" data-cap="Main menu"><img src="assets/images/shot-1.svg" width="1280" height="720" loading="lazy" alt="Main menu"><span class="cap">Main menu</span></button>
+      <button type="button" data-full="assets/images/shot-2.svg" data-alt="Settings screen" data-cap="Settings"><img src="assets/images/shot-2.svg" width="1280" height="720" loading="lazy" alt="Settings screen"><span class="cap">Settings</span></button>
+      <button type="button" data-full="assets/images/shot-3.svg" data-alt="Match setup screen" data-cap="Match setup"><img src="assets/images/shot-3.svg" width="1280" height="720" loading="lazy" alt="Match setup screen"><span class="cap">Match setup</span></button>
+      <button type="button" data-full="assets/images/shot-4.svg" data-alt="Racket in hand" data-cap="Racket in hand"><img src="assets/images/shot-4.svg" width="1280" height="720" loading="lazy" alt="Racket in hand"><span class="cap">Racket in hand</span></button>
+      <button type="button" data-full="assets/images/shot-5.svg" data-alt="Court with scoreboard" data-cap="Court with scoreboard"><img src="assets/images/shot-5.svg" width="1280" height="720" loading="lazy" alt="Court with scoreboard"><span class="cap">Court with scoreboard</span></button>
+      <button type="button" data-full="assets/images/shot-6.svg" data-alt="A rally in progress" data-cap="Rally"><img src="assets/images/shot-6.svg" width="1280" height="720" loading="lazy" alt="A rally in progress"><span class="cap">Rally</span></button>
+    </div>
+    <div class="video-ph reveal">
+      <!-- To add a gameplay video: replace this block with <video controls preload="none" poster="assets/images/shot-5.webp" width="1280" height="720"><source src="assets/video/gameplay.mp4" type="video/mp4"></video> -->
+      Gameplay video: <span class="tbc">To be confirmed</span>
+    </div>
+  </div>
+</section>
+
+<!-- DOWNLOAD -->
+<section id="download" aria-labelledby="dl-title">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Download</span>
+      <h2 id="dl-title">Get Paddle Game</h2>
+      <p>The APK is hosted on GitHub Releases. Nothing downloads until you press the button.</p>
+    </div>
+    <div class="dl-box reveal">
+      <div class="dl-grid">
+        <div>
+          <h3>File information</h3>
+          <table class="info">
+            <tr><th scope="row">File name</th><td data-cfg="filename"></td></tr>
+            <tr><th scope="row">Size</th><td data-cfg="filesize"></td></tr>
+            <tr><th scope="row">Version</th><td data-cfg="version"></td></tr>
+            <tr><th scope="row">Release date</th><td data-cfg="date"></td></tr>
+            <tr><th scope="row">SHA-256</th><td><div class="hash"><code data-cfg="sha" id="sha-code"></code><button type="button" class="copy" id="copy-sha">Copy</button></div></td></tr>
+            <tr><th scope="row">Price / licence</th><td class="tbc">To be confirmed</td></tr>
+          </table>
+        </div>
+        <div>
+          <h3>Release notes - v<span data-cfg="version"></span></h3>
+          <ul class="notes-list">
+            <li>First public release.</li>
+            <li>Practice mode and Play Match mode.</li>
+            <li>Three AI difficulty levels: Easy, Medium, Hard.</li>
+            <li>Matches of 2, 4 or 8 rounds.</li>
+            <li>Settings for graphics quality and music.</li>
+          </ul>
+          <div class="btn-row" style="margin-top:26px">
+            <a class="btn btn-primary btn-lg" id="dl-btn" href="#download" download>DOWNLOAD APK</a>
+            <a class="btn btn-ghost btn-lg" id="rel-btn" href="#download">VIEW ALL RELEASES</a>
+          </div>
+          <p class="dl-status" id="dl-status" role="status"></p>
+        </div>
+      </div>
+      <p class="note"><strong>Note:</strong> Downloading the file does not install the game. The APK is intended for compatible Meta Quest devices. Follow the <a href="#install">install guide</a> below. If you published a checksum, compare it with the file you downloaded before installing.</p>
+    </div>
+  </div>
+</section>
+
+<!-- INSTALL -->
+<section id="install" class="alt" aria-labelledby="inst-title">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Install guide</span>
+      <h2 id="inst-title">Installing on your headset</h2>
+      <p>Paddle Game is not on the Meta Store, so it is installed manually (sideloaded).</p>
+    </div>
+    <div class="grid g2">
+      <ol class="steps reveal">
+        <li><strong>Download the APK on a PC</strong><span>Save <code data-cfg="filename"></code> to a folder you can find.</span></li>
+        <li><strong>Prepare the headset and PC</strong><span>Charge the headset and make sure it is signed in with your Meta account.</span></li>
+        <li><strong>Follow Meta's developer setup</strong><span>Developer Mode and authorization may be required. Requirements and eligibility are set by Meta and may vary by region or account. See <a href="https://developers.meta.com/horizon/" target="_blank" rel="noopener noreferrer">developers.meta.com/horizon</a>.</span></li>
+        <li><strong>Connect with a USB data cable</strong><span>Plug the headset into the PC and allow USB debugging if the headset asks.</span></li>
+        <li><strong>Install the APK</strong><span>Drag and drop it in Meta Quest Developer Hub, or run the adb command shown on the right.</span></li>
+        <li><strong>Open the game</strong><span>Find "Paddle" in the headset Library. Apps from outside the Store appear under "Unknown Sources".</span></li>
+      </ol>
+      <div class="reveal">
+        <div class="card" style="margin-bottom:20px">
+          <h3>Install with adb</h3>
+          <pre><code>adb devices
+adb install -r PaddleGameApk.apk</code></pre>
+          <p>Run these in the folder that contains the APK. <code>adb devices</code> should list your headset as <code>device</code>, not <code>unauthorized</code>.</p>
+        </div>
+        <h3>Troubleshooting</h3>
+        <div class="acc">
+          <details><summary>The PC does not see the headset</summary><p>You may be using a charge-only cable. Use a USB data cable and try another port.</p></details>
+          <details><summary>No USB debugging prompt appears</summary><p>Put the headset on, unplug and replug the cable, then accept the "Allow USB debugging" prompt in the headset.</p></details>
+          <details><summary>adb shows "unauthorized"</summary><p>Accept the prompt inside the headset. If it does not appear, revoke USB debugging authorizations in the headset's developer settings, reconnect and accept again.</p></details>
+          <details><summary>Install fails because of low storage</summary><p>Free up space on the headset by removing apps you do not use, then try again.</p></details>
+          <details><summary>INSTALL_FAILED_UPDATE_INCOMPATIBLE</summary><p>A copy of the app signed differently is already installed. Uninstall the old copy first, then install again.</p></details>
+          <details><summary>I can't find the game in the headset</summary><p>Open the Library and switch the filter to "Unknown Sources". The app is listed as "Paddle".</p></details>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REQUIREMENTS -->
+<section id="requirements" aria-labelledby="req-title">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">System requirements</span>
+      <h2 id="req-title">What you need</h2>
+    </div>
+    <div class="req-wrap reveal">
+      <table class="req">
+        <tr><th scope="row">Platform</th><td>Meta Quest headset (standalone Android ARM64 APK)</td></tr>
+        <tr><th scope="row">Supported headset models</th><td class="tbc">To be confirmed</td></tr>
+        <tr><th scope="row">Minimum free storage</th><td class="tbc">To be confirmed</td></tr>
+        <tr><th scope="row">Download size</th><td data-cfg="filesize"></td></tr>
+        <tr><th scope="row">Internet</th><td>Not needed to play</td></tr>
+        <tr><th scope="row">Account</th><td>None needed inside the game</td></tr>
+        <tr><th scope="row">To install</th><td>A PC, a USB data cable, and a headset set up for sideloading</td></tr>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="alt" aria-labelledby="faq-title">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">FAQ</span>
+      <h2 id="faq-title">Questions and answers</h2>
+    </div>
+    <div class="acc reveal">
+      <details><summary>What is Paddle Game?</summary><p>A standalone, single-player VR padel game for Meta Quest. Padel is a tennis-like sport played in a court with glass walls.</p></details>
+      <details><summary>Is it an official Meta product or on the Meta Store?</summary><p>No. Paddle Game is independently developed. It is not an official Meta product and not a Meta Store listing.</p></details>
+      <details><summary>Do I need internet to play?</summary><p>No. The game is fully offline. It needs no internet connection and no server.</p></details>
+      <details><summary>Is it multiplayer?</summary><p>No. It is single-player. You play against a computer-controlled AI opponent.</p></details>
+      <details><summary>How do I serve and hit the ball?</summary><p>Hold the racket in your right hand and the ball in your left. Press X on the left controller to serve, then swing to hit.</p></details>
+      <details><summary>What difficulty levels and match lengths are there?</summary><p>Easy, Medium and Hard. Matches are 2, 4 or 8 rounds. The point goes to the player who hit the ball last.</p></details>
+      <details><summary>Which headsets are supported?</summary><p>The supported models are <span class="tbc">to be confirmed</span>. The game is built as an Android ARM64 app for Meta Quest.</p></details>
+      <details><summary>What data does the game collect?</summary><p>None is sent anywhere. There are no accounts and no network use. The game stores only four settings on the headset. See the <a href="privacy.html">privacy page</a>.</p></details>
+      <details><summary>Why do I need to sideload it, and is it free?</summary><p>The game is not on the Meta Store, so it is installed manually using Meta's developer tools. The price or licence is <span class="tbc">to be confirmed</span>.</p></details>
+      <details><summary>I found a problem. How do I report it?</summary><p>Use the contact details in the footer once they are published. Please include your headset model and what happened.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- CREDITS -->
+<section id="credits" aria-labelledby="credits-title">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Credits</span>
+      <h2 id="credits-title">The team and the tools</h2>
+    </div>
+    <div class="grid g2">
+      <!-- TEAM SECTION: delete this whole <div class="card"> to remove the team -->
+      <div class="card reveal">
+        <h3>Team</h3>
+        <p>Final year project of UIT University, Group CS04.</p>
+        <ul class="notes-list">
+          <li>Anas Nadeem</li>
+          <li>Huzaifa Khan</li>
+          <li>Saad Saleem</li>
+          <li>Imran Baig</li>
+        </ul>
+        <p style="margin-top:12px">Supervisor: Sir Waqas Pasha</p>
+      </div>
+      <div class="card reveal">
+        <h3>Built with</h3>
+        <ul class="notes-list">
+          <li>Unity</li>
+          <li>BNG VR Interaction Framework</li>
+          <li>Mixamo animations</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <a class="logo" href="#home"><span>PADDLE GAME</span></a>
+    <ul class="foot-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#download">Download</a></li>
+      <li><a href="#install">Install Guide</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#" data-contact>Contact</a></li>
+      <li><a href="privacy.html">Privacy</a></li>
+    </ul>
+    <p class="disclaimer">Paddle Game is an independently developed application. It is not affiliated with, endorsed by, or sponsored by Meta Platforms, Inc. Meta Quest is a trademark of Meta Platforms, Inc.</p>
+    <p class="copyright">&copy; <span id="year">2026</span> Paddle Game. All rights reserved.</p>
+  </div>
+</footer>
+
+<div class="lb" id="lightbox" role="dialog" aria-modal="true" aria-label="Screenshot viewer">
+  <div class="lb-in">
+    <img src="" alt="" width="1280" height="720">
+    <p></p>
+    <button type="button" class="close" aria-label="Close">&times;</button>
+    <button type="button" class="prev" aria-label="Previous screenshot">&#8249;</button>
+    <button type="button" class="next" aria-label="Next screenshot">&#8250;</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
